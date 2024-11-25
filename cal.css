@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:     #E8DAEF; 
+    font-family: 'Arial', sans-serif;
+    outline: none;
+}
+
+.overall {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: grid;
+    background-color: #f4f4f4;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    grid-template-columns: repeat(4, 80px); 
+}
+
+input {
+    grid-column: span 4;
+    height: 70px;
+    width: 320px;
+    background-color: #ecf0f1; 
+    box-shadow: inset -5px -5px 12px rgba(255, 255, 255, 0.9), inset 5px 5px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 20px;
+    color: #333; 
+    font-size: 32px;
+    text-align: end;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 50px;
+    margin: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    box-shadow: inset -5px -5px 12px rgba(255, 255, 255, 0.8), inset 5px 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+button.normal {
+    background-color: #1ABC9C; 
+    color: white;
+}
+
+button.normal:hover {
+    background-color: #16A085; 
+}
+
+button.normal:active {
+    background-color: #1D7874;
+}
+
+button.operator {
+    background-color: #F39C12;
+    color: white;
+}
+
+button.operator:hover {
+    background-color: #E67E22; 
+}
+
+button.operator:active {
+    background-color: #D35400; 
+}
+
+button.clear {
+    background-color: #E74C3C;
+    color: white;
+}
+
+button.clear:hover {
+    background-color: #C0392B;
+}
+
+button.clear:active {
+    background-color: #A93226; 
+}
+
+button.equal {
+    background-color: #3498DB; 
+    color: white;
+}
+
+button.equal:hover {
+    background-color: #2980B9; 
+}
+
+button.equal:active {
+    background-color: #1D6BA7; 
+}
+
+.guna {
+    width: 130px;
+    height: 48px;
+    background-color: #9B59B6; 
+    border-radius: 40px;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: inset -5px -5px 12px rgba(255, 255, 255, 0.8), inset 5px 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+.guna:hover {
+    background-color: #8E44AD; 
+}
+
+.guna:active {
+    background-color: #7D3C8C;
+}
+button:hover {
+    background-color: #eb6a6a;
+}
